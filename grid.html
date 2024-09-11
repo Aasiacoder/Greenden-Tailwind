@@ -1,0 +1,262 @@
+<!--flex row & column -->
+<style>
+    .div2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1 {
+        background-color: greenyellow;
+        color: black;
+        padding: 3px;
+        margin: 2px;
+    }
+</style>
+<div class="div2">
+    <h2 class="h2">Flex</h2>
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+</div>
+
+<!--grid in columns & rows-->
+<style>
+    .div {
+        display: grid;
+        /*grid-template-columns: 100px 200px ;*/
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+
+    }
+
+    .h1 {
+        background-color: greenyellow;
+        color: black;
+        padding: 3px;
+        margin: 2px;
+    }
+</style>
+<h2>Grid</h2>
+<div class="div">
+    <h1 class="h1">One</h1>
+    <h1 class="h1">Two</h1>
+    <h1 class="h1">Three</h1>
+    <h1 class="h1">Four</h1>
+    <h1 class="h1">Five</h1>
+    <h1 class="h1">Six</h1>
+</div>
+
+<!--flex eg-->
+<style>
+    .div1 {
+        background-color: orangered;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<h2 class="h2">Flex</h2>
+<div class="div1">
+    <h3 class="h2">Hello</h3>
+</div>
+
+<!--grid eg-->
+<style>
+    .div3 {
+        background-color: orangered;
+        width: 200px;
+        height: 200px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+</style>
+<h2>Grid</h2>
+<div class="div3">
+    <h3 class="h3">Hello</h3>
+</div>
+
+<!--Grid Ex1-->
+<style>
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+
+    .header {
+        background-color: skyblue;
+        padding: 5px;
+    }
+
+    .middle {
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+
+    .footer {
+        background-color: blue;
+        padding: 5px;
+    }
+
+    .one {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .main-container {
+        background-color: rgb(234, 172, 96);
+        color: black;
+        height: 100px;
+        margin: 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar {
+        background-color: pink;
+        color: black;
+        margin: 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .twin {
+        background-color: rgb(243, 139, 243);
+        color: black;
+        height: 100px;
+        margin: 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<h2>Grid Exercise</h2>
+<div class="container">
+    <div class="header">Header</div>
+    <div class="middle">
+        <div class="one">
+            <div class="main-container">Main Container</div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <div class="two">
+            <div class="twin">Twin</div>
+            <div class="twin">Twin</div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
+
+<!--Grid Task Ex-->
+<style>
+    .container1 {
+        background-color: rgb(243, 22, 22);
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+
+    .header1 {
+        background-color: pink;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+    }
+
+    .middle1 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .mid1 {
+        background-color: palevioletred;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+    }
+
+    .mid2 {
+        background-color: palegoldenrod;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin: 3px;
+    }
+    .art {
+        display: grid;
+        justify-content: center;
+        align-items: end;
+    }
+    .img {
+        display: grid;
+        justify-content: center;
+        align-items: end;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .img1 {
+        background-color: orange;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+        height: 50px;
+        padding: 5px;
+
+    }
+    .img2 {
+        background-color: orange;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;        
+        height: 50px;
+        padding: 5px;
+
+    }
+    .img3 {
+        background-color: orange;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+        height: 50px;
+        padding: 5px;
+    }
+    .footer1 {
+        background-color: pink;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+    }
+</style>
+<h2>Grid Task</h2>
+<div class="container1">
+    <div class="header1">Header</div>
+    <div class="middle1">
+        <div class="mid1">Aside</div>
+        <div class="mid2">
+           <div class="art">Article</div>
+            <div class="img">
+                <div class="img1">Image</div>
+                <div class="img2">Image</div>
+                <div class="img3">Image</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer1">Footer</div>
+</div>
